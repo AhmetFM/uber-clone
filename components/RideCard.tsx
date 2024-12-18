@@ -16,7 +16,7 @@ const RideCard = ({
     payment_status,
   },
 }: {
-  ride: Ride;
+  ride: Ride | any;
 }) => {
   return (
     <View className="flex flex-row items-center justify-center bg-white rounded-lg shadow-sm shadow-neutral-300 mb-3">

@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+<div align="center">
+    <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="reactnative" />
+    <img src="https://img.shields.io/badge/-PostgreSQL-black?style=for-the-badge&logoColor=white&logo=postgresql&color=4169E1" alt="postgresql" />
+    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="expo" />
+    <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=008CDD" alt="stripe" />
+  </div>
+  <h3 align="center">Full Stack Uber Clone</h3>
+</div>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## About This Project
 
-## Get started
+This project was created to learn Expo and strengthen my React Native skills. It served as a practical way to apply what I’ve learned and gain hands-on experience with mobile app development.
 
-1. Install dependencies
+## Tech Stack
 
-   ```bash
-   npm install
-   ```
+- React Native
+- Expo
+- Stripe
+- PostgreSQL
+- Google Maps
+- zustand
+- Clerk
+- Tailwind CSS
 
-2. Start the app
+## Quick Start</a>
 
-   ```bash
-    npx expo start
-   ```
+Follow these steps to set up the project locally on your machine.
 
-In the output, you'll find options to open the app in a
+**Prerequisites**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Make sure you have the following installed on your machine:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-## Get a fresh project
-
-When you're ready, run:
+**Cloning the Repository**
 
 ```bash
-npm run reset-project
+git clone https://github.com/AhmetFM/uber-clone.git
+cd uber
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Installation**
 
-## Learn more
+Install the project dependencies using npm:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**Set Up Environment Variables**
 
-## Join the community
+Create a new file named `.env` in the root of your project and add the following content:
 
-Join our community of developers creating universal apps.
+```env
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+EXPO_PUBLIC_PLACES_API_KEY=
+EXPO_PUBLIC_DIRECTIONS_API_KEY=
+
+DATABASE_URL=
+
+EXPO_PUBLIC_SERVER_URL=https://uber.dev/
+
+EXPO_PUBLIC_GEOAPIFY_API_KEY=
+
+EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+```
+
+Replace the placeholder values with your actual Clerk, Stripe, NeonDB, Google Maps, andgeoapify credentials. You can
+obtain these credentials by signing up on
+the [Clerk](https://clerk.com/), [Stripe](https://stripe.com/in), [NeonDB](https://neon.tech/), [Google Maps](https://console.cloud.google.com/)
+and [geoapify](https://www.geoapify.com/) websites respectively.
+
+**Running the Project**
+
+```bash
+npx expo start
+```
+
+Download the [Expo Go](https://expo.dev/go) app and Scan the QR code on your respective device to view the project.
